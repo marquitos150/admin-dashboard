@@ -9,8 +9,8 @@
 <body>
     <div class="sidebar">
         <div class="dashboard">Dashboard</div>
-        <div class="menu">
-            <ul class="first-list">
+        <div class="menu-first-list">
+            <ul>
                 <li>Home</li>
                 <li>Profile</li>
                 <li>Messages</li>
@@ -18,7 +18,9 @@
                 <li>Tasks</li>
                 <li>Communities</li>
             </ul>
-            <ul class="second-list">
+        </div>
+        <div class="menu-second-list">
+            <ul>
                 <li>Settings</li>
                 <li>Support</li>
                 <li>Privacy</li>
@@ -27,15 +29,21 @@
     </div>
 
     <div class="header">
-        <div class="search-bar-icon"></div>
-        <div class="search-bar"></div>
-        <div class="notification-bell"></div>
-        <div class="profile-icon-small"></div>
-        <div class="name-small">Marcos Vazquez</div>
-        <div class="profile-icon-big"></div>
+        <div class="search-bar-section">
+            <div class="search-bar-icon"></div>
+            <div class="search-bar"></div>
+        </div>
+        <div class="profile-section">
+            <div class="notification-bell"></div>
+            <div class="profile-icon-small"></div>
+            <div class="name-small">Marcos Vazquez</div>
+        </div>
         <div class="introduction">
-            <div class="hello">Hi there,</div>
-            <div class="name-big">Marcos Vazquez (@marcos)</div>
+            <div class="profile-icon-big"></div>
+            <div class="welcome-message">
+                <div class="hello">Hi there,</div>
+                <div class="name-big">Marcos Vazquez (@marcos)</div>
+            </div>
         </div>
         <div class="actions">
             <button>New</button>
@@ -44,72 +52,114 @@
         </div>
     </div>
     <div class="main-content">
-        <div class="projects">
+        <div class="projects-section">
             <div class="title">Your Projects</div>
-            <div class="my-projects">
+            <div class="projects">
                 <div class="card">
-                    <div class="title">Project 1</div>
+                    <div class="card-title">Project 1</div>
                     <p>This project was about blah blah blah!</p>
+                    <div class="options">
+                        <div class="star"></div>
+                        <div class="public-visibility"></div>
+                        <div class="share"></div>
+                    </div>
                 </div>
                 <div class="card">
-                    <div class="title">Project 2</div>
+                    <div class="card-title">Project 2</div>
                     <p>This project was about blah blah blah!</p>
+                    <div class="options">
+                        <div class="star"></div>
+                        <div class="public-visibility"></div>
+                        <div class="share"></div>
+                    </div>
                 </div>
                 <div class="card">
-                    <div class="title">Project 3</div>
+                    <div class="card-title">Project 3</div>
                     <p>This project was about blah blah blah!</p>
+                    <div class="options">
+                        <div class="star"></div>
+                        <div class="public-visibility"></div>
+                        <div class="share"></div>
+                    </div>
                 </div>
                 <div class="card">
-                    <div class="title">Project 4</div>
+                    <div class="card-title">Project 4</div>
                     <p>This project was about blah blah blah!</p>
+                    <div class="options">
+                        <div class="star"></div>
+                        <div class="public-visibility"></div>
+                        <div class="share"></div>
+                    </div>
                 </div>
                 <div class="card">
-                    <div class="title">Project 5</div>
+                    <div class="card-title">Project 5</div>
                     <p>This project was about blah blah blah!</p>
+                    <div class="options">
+                        <div class="star"></div>
+                        <div class="public-visibility"></div>
+                        <div class="share"></div>
+                    </div>
                 </div>
                 <div class="card">
-                    <div class="title">Project 6</div>
+                    <div class="card-title">Project 6</div>
                     <p>This project was about blah blah blah!</p>
+                    <div class="options">
+                        <div class="star"></div>
+                        <div class="public-visibility"></div>
+                        <div class="share"></div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="announcements">
+        <div class="announcements-section">
             <div class="title">Announcements</div>
-            <div class="all-announcements">
-                <div class="section">
-                    <div class="title">Announcement 1</div>
+            <div class="announcements">
+                <div class="tab">
+                    <div class="tab-title">Announcement 1</div>
                     <p>This announcement is about blah blah blah!</p>
                 </div>
-                <div class="section">
-                    <div class="title">Announcement 2</div>
+                <div class="tab">
+                    <div class="tab-title">Announcement 2</div>
                     <p>This announcement is about blah blah blah!</p>
                 </div>
-                <div class="section">
-                    <div class="title">Announcement 3</div>
+                <div class="tab">
+                    <div class="tab-title">Announcement 3</div>
                     <p>This announcement is about blah blah blah!</p>
                 </div>
             </div>
         </div>
 
-        <div class="trending">
+        <div class="trending-section">
             <div class="title">Trending</div>
-            <div class="top-trending">
-                <div class="trending-project">
-                    <div class="username">@lol</div>
-                    <p>My Super Duper Project</p>
+            <div class="trending">
+                <div class="tab">
+                    <div class="profile-icon-1"></div>
+                    <div class="project">
+                        <div class="username">@lol</div>
+                        <p>My Super Duper Project</p>
+                    </div>
                 </div>
-                <div class="trending-project">
-                    <div class="username">@urmom</div>
-                    <p>The IDK project</p>
+                <div class="tab">
+                    <div class="profile-icon-2"></div>
+                    <div class="project">
+                        <div class="username">@urmom</div>
+                        <p>The IDK project</p>
+                    </div>
                 </div>
-                <div class="trending-project">
-                    <div class="username">@ai-agent</div>
-                    <p>My AI Agent project</p>
+                <div class="tab">
+                    <div class="profile-icon-3"></div>
+                    <div class="project">
+                        <div class="username">@ai-agent</div>
+                        <p>My AI Agent project</p>
+                    </div>
                 </div>
-                <div class="trending-project">
-                    <div class="username">@zuckerberg</div>
-                    <p>Facebook Clone</p>
+                <div class="tab">
+                    <div class="profile-icon-4"></div>
+                    <div class="project">
+                        <div class="username">@zuckerberg</div>
+                        <p>Facebook Clone</p>
+                    </div>
                 </div>
             </div>
         </div>
