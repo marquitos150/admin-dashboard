@@ -6,34 +6,101 @@
 :root {
     --sidebar-bg-color: rgb(2, 144, 226);
 }
+
 body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
+    font-family: sans-serif;
 }
 
 .sidebar {
     grid-row: 1 / 3;
     height: 100vh;
     display: grid;
-    grid-template-rows: 20px 112px 60px;
-    gap: 50px;
+    grid-template-rows: 50px 190px 90px;
+    gap: 30px;
     background-color: var(--sidebar-bg-color);
     color: white;
 }
 
-/*
 .dashboard {
-    border: 2px solid red;
+    display: flex;
+    align-items: center;
 }
-.menu-first-list {
-    border: 2px solid blue;
+
+.dashboard-icon {
+    width: 40px;
+    filter: invert(1);
 }
+
+.dashboard-title {
+    font-size: 20px;
+}
+
+.menu-first-list,
 .menu-second-list {
-    border: 2px solid green;
+    list-style-type: none;
 }
-*/
+
+.menu-first-list li,
+.menu-second-list li {
+    padding-left: 50px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.menu-first-list li::before,
+.menu-second-list li::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-left: 15px;
+    filter: invert(1);
+}
+
+.menu-first-list li.home::before {
+    background-image: url('assets/home.svg');
+}
+
+.menu-first-list li.profile::before {
+    background-image: url('assets/profile.svg');
+}
+
+.menu-first-list li.message::before {
+    background-image: url('assets/message.svg');
+}
+
+.menu-first-list li.history::before {
+    background-image: url('assets/history.svg');
+}
+
+.menu-first-list li.tasks::before {
+    background-image: url('assets/tasks.svg');
+}
+
+.menu-first-list li.communities::before {
+    background-image: url('assets/communities.svg');
+}
+
+.menu-second-list li.settings::before {
+    background-image: url('assets/settings.svg');
+}
+
+.menu-second-list li.support::before {
+    background-image: url('assets/support.svg');
+}
+
+.menu-second-list li.privacy::before {
+    background-image: url('assets/privacy.svg');
+}
+
 .header {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
