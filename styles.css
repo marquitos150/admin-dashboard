@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sidebar {
@@ -40,6 +42,7 @@ body {
 .dashboard li {
     padding-left: 60px;
     position: relative;
+    font-weight: bold;
 }
 
 .dashboard li::before {
@@ -59,6 +62,8 @@ body {
     padding-left: 60px;
     margin-bottom: 20px;
     position: relative;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .menu-first-list li::before,
@@ -119,73 +124,97 @@ body {
 
 .search-bar-section {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
-    
+    padding-left: 30px;
 }
 
 .search-bar-icon {
-    background-color: gray;
+    background-image: url('assets/search.svg');
     height: 20px;
     width: 20px;
 }
 
 .search-bar {
-    background-color: rgb(218, 225, 229);
-    height: 20px;
-    width: 300px;
+    background-color: rgb(235, 239, 243);
+    height: 25px;
+    width: 500px;
     border-radius: 20px;
 }
 
 .profile-section {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding-right: 50px;
 }
 
 .notification-bell {
-    background-color: gray;
+    background-image: url('assets/notification-bell.svg');
     height: 20px;
     width: 20px;
 }
 
 .profile-icon-small {
-    background-color: black;
-    height: 20px;
-    width: 20px;
+    background-image: url('assets/penguin.svg');
+    background-size: cover;
+    height: 35px;
+    width: 35px;
 }
 
 .profile-icon-big {
-    background-color: rgb(255, 213, 0);
-    height: 50px;
-    width: 50px;
+    background-image: url('assets/penguin.svg');
+    background-size: cover;
+    height: 60px;
+    width: 60px;
 }
 
 .introduction {
     display: flex;
     align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.welcome-message .hello {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.welcome-message .name-big {
+    font-size: 20px;
 }
 
 .actions {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 20px;
+    padding-right: 40px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 button {
     background-color: var(--sidebar-bg-color);
     border: none;
     color: white;
-    padding: 10px 25px;
+    padding: 10px 27px;
     border-radius: 20px;
 }
 
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: rgb(235, 239, 243);
+    box-shadow: 0 5px 5px rgb(204, 204, 204) inset;
 }
 
 .projects-section {
