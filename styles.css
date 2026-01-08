@@ -214,6 +214,7 @@ button {
     background-color: rgb(235, 239, 243);
     box-shadow: 0 3px 3px rgb(204, 204, 204) inset;
     padding-top: 30px;
+    padding-right: 20px;
 }
 
 .projects-section {
@@ -222,7 +223,9 @@ button {
     padding-right: 20px;
 }
 
-.projects-section .title {
+.projects-section .title, 
+.announcements-section .title,
+.trending-section .title {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -249,6 +252,7 @@ button {
     font-size: 14px;
     padding-left: 25px;
     padding-top: 25px;
+    margin-bottom: 3px;
 }
 
 .options {
@@ -280,7 +284,97 @@ button {
 
 p {
     color: rgb(160, 160, 160);
+}
+
+.card-description {
     padding-left: 25px;
     font-size: 12px;
     padding-right: 25px;
+}
+
+.announcements {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px rgb(204, 204, 204);
+    padding: 25px;
+}
+
+.tab-title {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.tab-description {
+    font-size: 10px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.announcements .tab:last-child .tab-description {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.trending-section {
+    padding-top: 30px;
+}
+
+.trending {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px rgb(204, 204, 204);
+    padding: 18px;
+}
+
+.trending .tab {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 15px;
+}
+
+.trending .tab:last-child {
+    padding-bottom: 0;
+}
+
+.profile-icon-1 {
+    background-image: url('assets/lion.svg');
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+}
+
+.profile-icon-2 {
+    background-image: url('assets/fly.svg');
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+}
+
+.profile-icon-3 {
+    background-image: url('assets/fish.svg');
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+}
+
+.profile-icon-4 {
+    background-image: url('assets/lizard.svg');
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.project-name {
+    font-size: 12px;
 }
