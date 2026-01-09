@@ -5,6 +5,8 @@
 
 :root {
     --sidebar-bg-color: rgb(2, 144, 226);
+    --profile-icon-small-size: 35px;
+    --options-icon-size: 20px;
 }
 
 body {
@@ -160,8 +162,8 @@ body {
 .profile-icon-small {
     background-image: url('assets/penguin.svg');
     background-size: cover;
-    height: 35px;
-    width: 35px;
+    height: var(--profile-icon-small-size);
+    width: var(--profile-icon-small-size);
 }
 
 .profile-icon-big {
@@ -215,6 +217,7 @@ button {
     box-shadow: 0 3px 3px rgb(204, 204, 204) inset;
     padding-top: 30px;
     padding-right: 20px;
+    padding-bottom: 50px;
 }
 
 .projects-section {
@@ -266,20 +269,20 @@ button {
 
 .favorite {
     background-image: url('assets/favorite.svg');
-    width: 20px;
-    height: 20px;
+    width: var(--options-icon-size);
+    height: var(--options-icon-size);
 }
 
 .visibility {
     background-image: url('assets/visibility.svg');
-    width: 20px;
-    height: 20px;
+    width: var(--options-icon-size);
+    height: var(--options-icon-size);
 }
 
 .fork {
     background-image: url('assets/fork.svg');
-    width: 20px;
-    height: 20px;
+    width: var(--options-icon-size);
+    height: var(--options-icon-size);
 }
 
 p {
@@ -344,29 +347,29 @@ p {
 .profile-icon-1 {
     background-image: url('assets/lion.svg');
     background-size: cover;
-    height: 35px;
-    width: 35px;
+    height: var(--profile-icon-small-size);
+    width: var(--profile-icon-small-size);
 }
 
 .profile-icon-2 {
     background-image: url('assets/fly.svg');
     background-size: cover;
-    height: 35px;
-    width: 35px;
+    height: var(--profile-icon-small-size);
+    width: var(--profile-icon-small-size);
 }
 
 .profile-icon-3 {
     background-image: url('assets/fish.svg');
     background-size: cover;
-    height: 35px;
-    width: 35px;
+    height: var(--profile-icon-small-size);
+    width: var(--profile-icon-small-size);
 }
 
 .profile-icon-4 {
     background-image: url('assets/lizard.svg');
     background-size: cover;
-    height: 35px;
-    width: 35px;
+    height: var(--profile-icon-small-size);
+    width: var(--profile-icon-small-size);
 }
 
 .username {
